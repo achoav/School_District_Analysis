@@ -744,3 +744,12 @@ A table of Scores by School Type looks as follows:
                         <td id="T_498fe534_a94a_11ea_ac65_8863df8cd0c9row1_col4" class="data row1 col4">53.695878</td>
             </tr>
     </tbody></table>
+
+# # Format the DataFrame 
+type_summary_df["Average Math Score"] = type_summary_df["Average Math Score"].map("{:.1f}".format)
+type_summary_df["Average Reading Score"] = type_summary_df["Average Reading Score"].map("{:.1f}".format)
+type_summary_df["% Passing Math"] = type_summary_df["% Passing Math"].map("{:.0f}".format)
+type_summary_df["% Passing Reading"] = type_summary_df["% Passing Reading"].map("{:.0f}".format)
+type_summary_df["% Overall Passing"] = type_summary_df["% Overall Passing"].map("{:.0f}".format)
+type_summary_df
+
